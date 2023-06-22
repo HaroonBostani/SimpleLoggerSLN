@@ -6,7 +6,9 @@ namespace SimpleLogger
     {
         static void Main(string[] args)
         {
-           
+            var loggerObj = new SimpleLogger { LogFilePath = @"C:\LogfileDir\" };
+
+            loggerObj.WriteToLog(DateTime.Now, "xxxxx", SimpleLogger.Severity.High);
         }
     }
 }
